@@ -1,20 +1,15 @@
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 
 source "/usr/local/bin/virtualenvwrapper.sh"
-
-export ZSH="/home/generic-website/.oh-my-zsh"
-export ZSH_CUSTOM="/home/generic-website/.oh-my-zsh/custom"
-
+source "$ZSH/oh-my-zsh.sh"
 source "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme"
 source "$ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
-
 plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
 
 ZSH_THEME="spaceship"
 
