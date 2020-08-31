@@ -1,4 +1,8 @@
-Install basic user
+Install basic user:
+* zsh
+* pip
+* virtualenvwrapper
+* setup .zshrc
 
 ```sh
 $ adduser new-user
