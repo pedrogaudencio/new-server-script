@@ -7,6 +7,7 @@ Install basic user:
 ```sh
 $ adduser new-user
 $ gpasswd -a new-user sudo
+$ usermod -aG sudo new-user
 $ su new-user
 ```
 
