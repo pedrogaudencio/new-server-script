@@ -12,5 +12,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/
 git clone https://github.com/zsh-users/zsh-syntax-highlighting "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting/"
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt/"
 
-sudo apt install xclip python3-pip;
-sudo pip3 install virtualenv virtualenvwrapper;
+sudo add-apt-repository ppa:mattrose/terminator/ppa
+sudo apt update
+sudo apt install terminator
+
+mkdir -p ~/.config/terminator/
+cp .terminator ~/.config/terminator/config
